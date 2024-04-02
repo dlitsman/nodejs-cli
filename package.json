@@ -4,8 +4,11 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "bin": "./dist/cli.js",
   "scripts": {
-    "start": "tsx ./index.ts",
+    "start": "node dist/cli.js",
+    "build": "tsc",
+    "dev": "tsx ./index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
